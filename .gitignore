@@ -11,6 +11,9 @@ yarn-error.log*
 .history
 
 # scss
-maquetado/scss/out/*
-maquetado/.sass-cache/*
-maquetado/.scss-cache/*
+maquetado/.sass-cache/
+maquetado/.scss-cache/
+maquetado/*.css.map
+maquetado/*.sass.map
+maquetado/*.scss.map
+maquetado/*.css
