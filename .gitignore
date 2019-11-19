@@ -9,3 +9,11 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 .history
+
+# scss
+maquetado/.sass-cache/
+maquetado/.scss-cache/
+maquetado/*.css.map
+maquetado/*.sass.map
+maquetado/*.scss.map
+maquetado/*.css
