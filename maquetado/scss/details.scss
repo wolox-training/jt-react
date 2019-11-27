@@ -5,6 +5,11 @@
   display: flex;
 }
 
+.book {
+  margin: $book-margin;
+  box-shadow: $book-box-shadow;
+}
+
 .book-element {
   margin-top: $book-element-margin-top;
 }
