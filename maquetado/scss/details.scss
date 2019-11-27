@@ -1,28 +1,31 @@
 .book,
 .book-element,
-.book-elements {
+.book-elements,
+.book-title {
   display: flex;
 }
 
 .book-element {
-  margin-top: 10%;
+  margin-top: $book-element-margin-top;
 }
 
 .book-element-text {
-  margin-left: 1%;
+  margin-left: $element-text-margin-left;
 }
 
 .book-info {
   flex-direction: column;
-  width: 25%
+  width: $book-info-width;
 }
 
 .book-image {
-  height: 562px;
-  width: 398px;
-  margin: 1%;
+  height: $book-image-height;
+  width: $book-image-width;
+  margin: $book-image-margin;
 }
 
 .book-title {
-  
+  margin-top: $book-title-margin-top;
+  border-bottom: $book-title-border-bottom solid $lime;
+  padding-bottom: $book-title-padding-bottom;
 }
