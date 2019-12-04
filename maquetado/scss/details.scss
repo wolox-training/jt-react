@@ -1,3 +1,14 @@
-.book-element {
+.book,
+.book-element,
+.book-elements {
   display: flex;
+}
+
+.book-info {
+  flex-direction: column;
+}
+
+.book-image {
+  height: 562px;
+  width: 398px;
 }
