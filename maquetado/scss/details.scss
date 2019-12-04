@@ -6,31 +6,32 @@
 }
 
 .book {
-  margin: $book-margin;
-  box-shadow: $book-box-shadow;
+  margin: 10px;
+  box-shadow: 2px 5px 10px;
 }
 
 .book-element {
-  margin-top: $book-element-margin-top;
+  margin-bottom: 30px;
 }
 
-.book-element-text {
-  margin-left: $element-text-margin-left;
+.book-element-heading {
+  margin-right: 4px;
 }
 
 .book-info {
   flex-direction: column;
-  width: $book-info-width;
+  width: 25%;
 }
 
 .book-image {
-  height: $book-image-height;
-  width: $book-image-width;
-  margin: $book-image-margin;
+  height: 562px;
+  width: 398px;
+  margin: 10px;
 }
 
 .book-title {
-  margin-top: $book-title-margin-top;
-  border-bottom: $book-title-border-bottom solid $lime;
-  padding-bottom: $book-title-padding-bottom;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid $lime;
+  padding-bottom: 12px;
 }
