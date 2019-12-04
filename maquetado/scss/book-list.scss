@@ -1,12 +1,23 @@
-.book-list-element {
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.book-thumbnail {
+  box-shadow: 1px 1px 2px;
+  padding: 10px;
   margin: 30px;
   height: 281px;
   width: 199px; 
 }
 
 .book-thumbnail-image {
-  height: 75%;
-  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  width: 156px; 
 }
 
 .book-thumbnail-element {
