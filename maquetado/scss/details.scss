@@ -52,6 +52,17 @@
   width: 25%;
 }
 
+.book-list-element {
+  position: relative;
+  height: 140.5px;
+  width: 99.5px; 
+}
+
+.book-list-image {
+  height: 100%;
+  width: 100%;
+}
+
 .book-title {
   margin-bottom: 30px;
   border-bottom: 2px solid $lime;
