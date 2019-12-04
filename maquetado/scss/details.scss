@@ -41,7 +41,7 @@ body {
 
   &:after {
     transform: rotate(20deg);
-    background: url('images/badge.png') no-repeat;
+    background: url('images/badge.png') no-repeat/contain;
     background-size: contain;
     content: "";
     position: absolute;
