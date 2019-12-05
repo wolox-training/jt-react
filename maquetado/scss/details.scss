@@ -20,6 +20,7 @@
 
 .book-info {
   flex-direction: column;
+  padding-top: 15px;
   width: 25%;
 }
 
@@ -30,7 +31,6 @@
 }
 
 .book-title {
-  margin-top: 10px;
   margin-bottom: 30px;
   border-bottom: 2px solid $lime;
   padding-bottom: 12px;
