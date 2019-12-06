@@ -17,3 +17,7 @@ maquetado/*.css.map
 maquetado/*.sass.map
 maquetado/*.scss.map
 maquetado/*.css
+
+# vim
+.vimrc
+maquetado/.vimrc

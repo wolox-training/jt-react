@@ -1,3 +1,7 @@
+body {
+  padding: 10px;
+}
+
 .book,
 .book-element,
 .book-elements,
@@ -6,8 +10,9 @@
 }
 
 .book {
-  margin: 10px;
   box-shadow: 2px 5px 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .book-element {
@@ -21,13 +26,13 @@
 .book-info {
   flex-direction: column;
   padding-top: 15px;
-  width: 25%;
 }
 
 .book-image {
   height: 562px;
   width: 398px;
-  margin: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .book-title {
