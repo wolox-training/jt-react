@@ -11,8 +11,8 @@ body {
 
 .book {
   box-shadow: 2px 5px 10px;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 .book-element {
@@ -25,7 +25,6 @@ body {
 
 .book-info {
   flex-direction: column;
-  padding-top: 15px;
 }
 
 .book-image {
@@ -37,7 +36,8 @@ body {
   position: relative;
   height: 562px;
   width: 398px;
-  margin: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px;
 
   &:after {
     transform: rotate(20deg);
@@ -49,11 +49,6 @@ body {
     right: -15px;
     top: -15px;
   }
-}
-
-.book-info {
-  flex-direction: column;
-  width: 25%;
 }
 
 .book-title {
