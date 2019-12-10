@@ -1,14 +1,42 @@
+body {
+  padding: 10px;
+}
+
 .book,
 .book-element,
-.book-elements {
+.book-elements,
+.book-title {
   display: flex;
+}
+
+.book {
+  box-shadow: 2px 5px 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.book-element {
+  margin-bottom: 30px;
+}
+
+.book-element-heading {
+  margin-right: 4px;
 }
 
 .book-info {
   flex-direction: column;
+  padding-top: 15px;
 }
 
 .book-image {
   height: 562px;
   width: 398px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.book-title {
+  margin-bottom: 30px;
+  border-bottom: 2px solid $lime;
+  padding-bottom: 12px;
 }
