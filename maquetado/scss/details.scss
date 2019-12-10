@@ -1,7 +1,3 @@
-body {
-  padding: 10px;
-}
-
 .book,
 .book-element,
 .book-info,
@@ -49,6 +45,11 @@ body {
     right: -15px;
     top: -15px;
   }
+}
+
+.book-info {
+  flex-direction: column;
+  width: 25%;
 }
 
 .book-title {
