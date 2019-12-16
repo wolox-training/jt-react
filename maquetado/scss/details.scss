@@ -1,35 +1,53 @@
-.book,
-.book-container,
-.book-element,
-.book-info,
-.book-title {
-  display: flex;
-}
-
 .book {
+  width: 100%;
+  max-width:  853px;
   box-shadow: 2px 5px 10px;
-  padding-top: 15px;
-  padding-left: 15px;
+  display: grid;
+  grid-template-rows: 61px 321px 34px 150px;
+  grid-template-areas: 
+    "title"
+    "image"
+    "genre"
+    "book-info";
+
+  grid-area: book;
+  justify-self: center;
+  align-self: center;
 }
 
 .book-container {
-  flex-direction: column;
-  padding: 25px;
+  display: grid;
+  grid-template-rows: 602px 65px;
+  grid-template-areas:
+    "book"
+    "redirect";
 }
 
 .book-element {
-  margin-bottom: 36px;
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 18px; 
 }
 
 .book-element-heading {
   margin-right: 4px;
 }
 
+.book-genre {
+  grid-area: genre;
+  justify-self: center;
+  align-self: center;
+}
+
 .book-info {
-  flex-direction: column;
-  width: 100%;
+  width: 90%;
   max-width: 540px;
   font-family: Roboto;
+  border-top: 2px solid $lime;
+  padding-top: 12px;
+  grid-area: book-info;
+  justify-self: center;
+  align-self: center;
 }
 
 .book-image {
@@ -39,90 +57,104 @@
 
 .book-image-container {
   position: relative;
-  height: 562px;
-  width: 100%;
-  max-width: 398px;
-  margin-right: 25px;
-  margin-bottom: 15px;
+  height: 299px;
+  width: 212px;
+  grid-area: image;
+  justify-self: center;
+  align-self: center;
 
   &:after {
     transform: rotate(20deg);
     background: url('images/badge.png') left / contain no-repeat;
     content: '';
     position: absolute;
-    height: $badge-height;
-    width: $badge-width;
+    height: $badge-height*$badge-responsive-conversion-rate;
+    width: $badge-width*$badge-responsive-conversion-rate;
     right: -15px;
     top: -15px;
   }
 }
 
-.book-info {
-  flex-direction: column;
-  width: 25%;
-}
-
 .book-title {
-  margin-bottom: 30px;
-  border-bottom: 2px solid $lime;
-  padding-bottom: 12px;
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+  font-size: 24px;
 }
 
 .redirect-button {
-  margin-bottom: 110px;
-  height: 22px;
-  width: 91px;
   position: relative;
-  right: -30px;
+  grid-area: redirect;
+  justify-self: center;
+  align-self: center;
 
   &:before {
-    background: url('images/back-arrow.png');
+    background: url('images/back-arrow.png') no-repeat;
     display: inline-block;
     content: '';
-    height: 20px;
-    right: 100px;
-    bottom: 5px;
+    height: $badge-height*$badge-responsive-conversion-rate;
+    width: $badge-width*$badge-responsive-conversion-rate;
+    right: 5px;
     position: absolute;
-    width: 20px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .book-container {
-    align-items: center;
-  }
-
+@media (min-width: 768px) {
   .book {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width:  336px;
-    margin-bottom: 20px;
-    padding-left: 0;
+    grid-template-rows: 60px 30px 424px;
+    grid-template-columns: 311px auto;
+    grid-template-areas:
+      "title title"
+      "genre genre"
+      "image book-info";
   }
 
-  .book-element-heading {
-    margin-right: 2px;
+  .book-container {
+    grid-template-rows: 65px 602px;
+    grid-template-areas:
+      "redirect"
+      "book";
   }
 
-  .book-info {
-    width: 100%;
-    max-width: 300px;
+  .book-element {
+    font-size: 18px;
+    margin-bottom: 36px;
   }
 
   .book-image-container {
-    margin-right: 0;
-    margin-bottom: 21.09px;
-    width: 212px;
-    height: 298.91px;
+    height: 368px;
+    width: 100%;
+    max-width: 261px;
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
 
     &:after {
-      height: $badge-height*$badge-responsive-conversion-rate;
-      width: $badge-width*$badge-responsive-conversion-rate;
+      transform: rotate(20deg);
+      background: url('images/badge.png') left / contain no-repeat;
+      content: '';
+      position: absolute;
+      height: $badge-height;
+      width: $badge-width;
+      right: -15px;
+      top: -15px;
     }
   }
 
+  .book-genre {
+    align-self: start;
+    font-size: 24px;
+  }
+
+  .book-info {
+    border-top: none;
+  }
+
+  .book-title {
+    align-self: end;
+  }
+
   .redirect-button {
-    order: 2;
+    justify-self: start;
   }
 }
