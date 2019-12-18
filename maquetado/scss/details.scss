@@ -32,6 +32,11 @@
 
 .book-element-heading {
   margin-right: 4px;
+  font-size: 13px;
+}
+
+.book-element-text {
+  font-size: 13px;
 }
 
 .book-genre {
@@ -148,6 +153,14 @@
   .book-genre {
     align-self: start;
     font-size: 24px;
+  }
+
+  .book-element-heading {
+    font-size: 14px;
+  }
+
+  .book-element-text {
+    font-size: 14px;
   }
 
   .book-info {
