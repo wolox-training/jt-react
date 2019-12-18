@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>login</title>
+  <link rel="stylesheet" type="text/css" href="application.css">
 </head>
 <body>
   <div class="login-container">
-    <img src="images/LogoWolox.png" alt="logo">
-    <form>
-      Email:
-      <input type="text">
-      Password:
-      <input type="text">
-    </form>
-    <button class="login-button">Login</button>
-    <button class="sign-up-button">Sign Up</button>
+    <div class="login">
+      <div class="login-logo-container">
+        <img class="login-logo" src="images/LogoWolox.png" alt="logo">
+      </div>
+      <form class="text-roboto">
+        <label class="login-form-text text-bold">Email:</label>
+        <input class="login-form-email-input login-form-input" type="text">
+        <label class="login-form-text text-bold">Password:</label>
+        <input class="login-form-password-input login-form-input" type="text">
+      </form>
+      <div class="login-button-container">
+        <button class="login-button">Login</button>
+      </div>
+      <button class="sign-up-button">Sign Up</button>
+    </div>
  </div>
 </body>
 </html>

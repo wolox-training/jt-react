@@ -1,6 +1,11 @@
 @import 'equalizer';
 @import 'texts';
 @import 'colors';
+@import 'dimensions';
 @import 'details';
 @import 'book-list';
 @import 'login';
+
+* {
+  font-family: Roboto;
+}

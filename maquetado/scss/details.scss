@@ -29,6 +29,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 540px;
+  font-family: Roboto;
 }
 
 .book-image {
@@ -39,7 +40,8 @@
 .book-image-container {
   position: relative;
   height: 562px;
-  width: 398px;
+  width: 100%;
+  max-width: 398px;
   margin-right: 25px;
   margin-bottom: 15px;
 
@@ -48,16 +50,11 @@
     background: url('images/badge.png') left / contain no-repeat;
     content: '';
     position: absolute;
-    height: 20%;
-    width: 20%;
+    height: $badge-height;
+    width: $badge-width;
     right: -15px;
     top: -15px;
   }
-}
-
-.book-info {
-  flex-direction: column;
-  width: 25%;
 }
 
 .book-title {
@@ -82,5 +79,50 @@
     bottom: 5px;
     position: absolute;
     width: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .book-container {
+    align-items: center;
+  }
+
+  .book {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width:  336px;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+
+  .book-element-heading {
+    margin-right: 2px;
+    font-size: 13px;
+  }
+
+  .book-element-text {
+    font-size: 13px;
+  }
+
+  .book-info {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .book-image-container {
+    margin-right: 0;
+    margin-bottom: 21px;
+    width: 212px;
+    height: 299px;
+
+    &:after {
+      height: $badge-height*$badge-responsive-conversion-rate;
+      width: $badge-width*$badge-responsive-conversion-rate;
+    }
+  }
+
+  .redirect-button {
+    order: 2;
   }
 }
