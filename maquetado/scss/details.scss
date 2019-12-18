@@ -106,8 +106,7 @@
   }
 
   &:hover:before {
-    animation-name: redirect-rotate;
-    animation-duration: 1s;
+    animation: redirect-rotate 1s;
   }
 }
 
