@@ -104,6 +104,11 @@
     right: 40px;
     bottom: -3px;
   }
+
+  &:hover:before {
+    animation-name: redirect-rotate;
+    animation-duration: 1s;
+  }
 }
 
 @media (min-width: 768px) {
