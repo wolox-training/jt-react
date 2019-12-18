@@ -57,11 +57,6 @@
   }
 }
 
-.book-info {
-  flex-direction: column;
-  width: 25%;
-}
-
 .book-title {
   margin-bottom: 30px;
   border-bottom: 2px solid $lime;
@@ -101,12 +96,13 @@
     padding-left: 0;
   }
 
-  .book-element {
+  .book-element-heading {
+    margin-right: 2px;
     font-size: 13px;
   }
 
-  .book-element-heading {
-    margin-right: 2px;
+  .book-element-text {
+    font-size: 13px;
   }
 
   .book-info {
