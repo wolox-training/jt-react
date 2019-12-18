@@ -16,6 +16,7 @@
 }
 
 .book-container {
+  padding: 0 20px;
   display: grid;
   grid-template-rows: 602px 65px;
   grid-template-areas:
@@ -92,10 +93,11 @@
     background: url('images/back-arrow.png') no-repeat;
     display: inline-block;
     content: '';
-    height: $badge-height*$badge-responsive-conversion-rate;
-    width: $badge-width*$badge-responsive-conversion-rate;
-    right: 5px;
+    width: 20px;
+    height: 20px;
     position: absolute;
+    right: 40px;
+    bottom: -3px;
   }
 }
 
@@ -110,6 +112,8 @@
   }
 
   .book-container {
+    width: 100%;
+    max-width: 853px;
     grid-template-rows: 65px 602px;
     grid-template-areas:
       "redirect"
@@ -156,5 +160,6 @@
 
   .redirect-button {
     justify-self: start;
+    right: -30px;
   }
 }
