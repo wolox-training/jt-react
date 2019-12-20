@@ -1,0 +1,63 @@
+.login {
+  width: 100%;
+  max-width: 300px;
+  border-top: 8px solid $wolox-blue;
+  box-shadow: 2px 5px 5px;
+  padding: 20px 24px 24px 24px;
+}
+
+.loginButtonContainer {
+  border-bottom: 2px solid $grey;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.loginButton {
+  width: 252px;
+  height: 32px;
+  color: $white;
+  background-color: $wolox-green;
+  border-radius: 5px;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.loginFormInput {
+  width: 100%;
+  max-width: 252px;
+  height: 32px;
+}
+
+.loginFormEmailInput {
+  margin-bottom: 16px; 
+}
+
+.loginFormPasswordInput {
+  margin-bottom: 24px; 
+}
+
+.loginFormText {
+  margin-bottom: 8px;
+}
+
+.loginLogo {
+  width: 212.42px;
+  height: 70px; 
+}
+
+.loginLogoContainer {
+  padding: 0px 19.58px 0px 20px;
+  margin-bottom: 16px;
+}
+
+.signUpButton {
+  width: 252px;
+  height: 32px;
+  border: 2px solid $wolox-green;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
