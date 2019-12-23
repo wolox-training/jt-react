@@ -1,20 +1,15 @@
 @import 'colors';
+@import 'texts';
 
-.login {
-  width: 100%;
-  max-width: 300px;
-  border-top: 8px solid $wolox-blue;
-  box-shadow: 2px 5px 5px;
-  padding: 20px 24px 24px 24px;
+.button {
+  width: 252px;
+  height: 32px;
+  border: 2px solid $wolox-green;
+  border-radius: 5px;
+  margin-bottom: 24px;
 }
 
-.loginButtonContainer {
-  border-bottom: 2px solid $grey;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-}
-
-.loginButton {
+.depressedButton {
   width: 252px;
   height: 32px;
   color: $white;
@@ -22,44 +17,43 @@
   border-radius: 5px;
 }
 
-.loginContainer {
+.signup {
+  width: 100%;
+  max-width: 300px;
+  border-top: 8px solid $wolox-blue;
+  box-shadow: 2px 5px 5px;
+  padding: 20px 24px 24px 24px;
+}
+
+.signupButtonContainer {
+  border-bottom: 2px solid $grey;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.signupContainer {
   display: flex;
   justify-content: center;
   padding-top: 50px;
 }
 
-.loginFormInput {
+.signupFormInput {
   width: 100%;
   max-width: 252px;
   height: 32px;
-}
-
-.loginFormEmailInput {
   margin-bottom: 16px; 
 }
 
-.loginFormPasswordInput {
-  margin-bottom: 24px; 
-}
-
-.loginFormText {
+.signupFormText {
   margin-bottom: 8px;
 }
 
-.loginLogo {
+.signupLogo {
   width: 212.42px;
   height: 70px; 
 }
 
-.loginLogoContainer {
+.signupLogoContainer {
   padding: 0px 19.58px 0px 20px;
   margin-bottom: 16px;
-}
-
-.signupButton {
-  width: 252px;
-  height: 32px;
-  border: 2px solid $wolox-green;
-  border-radius: 5px;
-  margin-bottom: 24px;
 }
