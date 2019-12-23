@@ -22,6 +22,7 @@ class Signup extends Component {
 
   handleSignup(event) {
     event.preventDefault();
+    console.log(event);
     console.log(this.state);
   }
 
@@ -52,7 +53,7 @@ class Signup extends Component {
           <div className={styles.signupLogoContainer}>
             <img className={styles.signupLogo} src="../../assets/logo-wolox.png" alt="logo" />
           </div>
-          <form onSubmit={this.handleSignup}>
+          <form className={styles.depressedButtonContainer} onSubmit={this.handleSignup}>
             <label className={`${styles.signupFormText} ${styles.textBold}`}>Nombre</label>
             <input className={styles.signupFormInput} type="text" onChange={this.handleNameChange} />
             <label className={`${styles.signupFormText} ${styles.textBold}`}>Apellido</label>
@@ -63,11 +64,8 @@ class Signup extends Component {
             <input className={styles.signupFormInput} type="text" onChange={this.handlePasswordChange} />
             <label className={`${styles.signupFormText} ${styles.textBold}`}>Confirmación de contraseña</label>
             <input className={styles.signupFormInput} type="text" onChange={this.handleRepeatPasswordChange} />
-            <input type="submit" value="submit" />
+            <input className={styles.depressedButton} type="submit" value="Sign Up" />
           </form>
-          <div className={styles.signupButtonContainer}>
-            <button className={styles.depressedButton} type="button">Sign Up</button>
-          </div>
           <button className={styles.button} type="button">Login</button>
         </div>
       </div>
