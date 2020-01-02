@@ -1,7 +1,8 @@
 @import "../../../scss/colors.scss";
 
 .button {
-  width: 252px;
+  max-width: 252px;
+  width: 100%;
   height: 32px;
   border: 2px solid $wolox-green;
   border-radius: 5px;
@@ -9,7 +10,8 @@
 }
 
 .depressed-button {
-  width: 252px;
+  max-width: 252px;
+  width: 100%;
   height: 32px;
   color: $white;
   background-color: $wolox-green;

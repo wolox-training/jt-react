@@ -5,47 +5,28 @@ import Logo from '../../assets/logo-wolox.png';
 import styles from './styles.module.scss';
 
 class Signup extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      lastName: '',
-      email: '',
-      password: '',
-      repeatPassword: ''
-    };
-    this.handleSignup = this.handleSignup.bind(this);
-    this.handleNameChange = this.handleNameChange.bind(this);
-    this.handleLastNameChange = this.handleLastNameChange.bind(this);
-    this.handleEmailChange = this.handleEmailChange.bind(this);
-    this.handlePasswordChange = this.handlePasswordChange.bind(this);
-    this.handleRepeatPasswordChange = this.handleRepeatPasswordChange.bind(this);
-  }
+  state = {
+    name: '',
+    lastName: '',
+    email: '',
+    password: '',
+    repeatPassword: ''
+  };
 
-  handleSignup(event) {
+  handleSignup = event => {
     event.preventDefault();
     console.log(this.state);
   }
 
-  handleNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
+  handleNameChange = event => this.setState({ name: event.target.value });
 
-  handleLastNameChange(event) {
-    this.setState({ lastName: event.target.value });
-  }
+  handleLastNameChange = event => this.setState({ lastName: event.target.value });
 
-  handleEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
+  handleEmailChange = event => this.setState({ email: event.target.value });
 
-  handlePasswordChange(event) {
-    this.setState({ password: event.target.value });
-  }
+  handlePasswordChange = event => this.setState({ password: event.target.value });
 
-  handleRepeatPasswordChange(event) {
-    this.setState({ repeatPassword: event.target.value });
-  }
+  handleRepeatPasswordChange = event => this.setState({ repeatPassword: event.target.value });
 
   render() {
     return (
