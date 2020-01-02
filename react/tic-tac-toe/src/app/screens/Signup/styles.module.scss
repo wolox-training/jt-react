@@ -1,5 +1,4 @@
-@import 'colors';
-@import 'texts';
+@import "../../../scss/colors.scss";
 
 .button {
   width: 252px;
@@ -9,7 +8,7 @@
   margin-bottom: 24px;
 }
 
-.depressedButton {
+.depressed-button {
   width: 252px;
   height: 32px;
   color: $white;
@@ -17,7 +16,7 @@
   border-radius: 5px;
 }
 
-.depressedButtonContainer {
+.depressed-button-container {
   border-bottom: 2px solid $grey;
   padding-bottom: 16px;
   margin-bottom: 16px;
@@ -31,29 +30,29 @@
   padding: 20px 24px 24px 24px;
 }
 
-.signupContainer {
+.signup-container {
   display: flex;
   justify-content: center;
   padding-top: 50px;
 }
 
-.signupFormInput {
+.signup-form-input {
   width: 100%;
   max-width: 252px;
   height: 32px;
   margin-bottom: 16px; 
 }
 
-.signupFormText {
+.signup-form-text {
   margin-bottom: 8px;
 }
 
-.signupLogo {
-  width: 212.42px;
+.signup-logo {
+  width: 212px;
   height: 70px; 
 }
 
-.signupLogoContainer {
-  padding: 0px 19.58px 0px 20px;
+.signup-logo-container {
+  padding: 0px 19px 0px 20px;
   margin-bottom: 16px;
 }

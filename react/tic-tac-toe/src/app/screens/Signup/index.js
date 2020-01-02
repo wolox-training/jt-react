@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Logo from '../../assets/logo-wolox.png';
+
 import styles from './styles.module.scss';
 
 class Signup extends Component {
@@ -22,7 +24,6 @@ class Signup extends Component {
 
   handleSignup(event) {
     event.preventDefault();
-    console.log(event);
     console.log(this.state);
   }
 
@@ -51,19 +52,19 @@ class Signup extends Component {
       <div className={styles.signupContainer}>
         <div className={styles.signup}>
           <div className={styles.signupLogoContainer}>
-            <img className={styles.signupLogo} src="../../assets/logo-wolox.png" alt="logo" />
+            <img className={styles.signupLogo} src={Logo} alt="logo" />
           </div>
           <form className={styles.depressedButtonContainer} onSubmit={this.handleSignup}>
-            <label className={`${styles.signupFormText} ${styles.textBold}`}>Nombre</label>
+            <label className={`${styles.signupFormText} text-bold`}>Nombre</label>
             <input className={styles.signupFormInput} type="text" onChange={this.handleNameChange} />
-            <label className={`${styles.signupFormText} ${styles.textBold}`}>Apellido</label>
+            <label className={`${styles.signupFormText} text-bold`}>Apellido</label>
             <input className={styles.signupFormInput} type="text" onChange={this.handleLastNameChange} />
-            <label className={`${styles.signupFormText} ${styles.textBold}`}>Email</label>
-            <input className={styles.signupFormInput} type="text" onChange={this.handleEmailChange} />
-            <label className={`${styles.signupFormText} ${styles.textBold}`}>Contraseña</label>
-            <input className={styles.signupFormInput} type="text" onChange={this.handlePasswordChange} />
-            <label className={`${styles.signupFormText} ${styles.textBold}`}>Confirmación de contraseña</label>
-            <input className={styles.signupFormInput} type="text" onChange={this.handleRepeatPasswordChange} />
+            <label className={`${styles.signupFormText} text-bold`}>Email</label>
+            <input className={styles.signupFormInput} type="email" onChange={this.handleEmailChange} />
+            <label className={`${styles.signupFormText} text-bold`}>Contraseña</label>
+            <input className={styles.signupFormInput} type="password" onChange={this.handlePasswordChange} />
+            <label className={`${styles.signupFormText} text-bold`}>Confirmación de contraseña</label>
+            <input className={styles.signupFormInput} type="password" onChange={this.handleRepeatPasswordChange} />
             <input className={styles.depressedButton} type="submit" value="Sign Up" />
           </form>
           <button className={styles.button} type="button">Login</button>

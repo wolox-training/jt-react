@@ -1,8 +1,9 @@
 import React from 'react';
 
-import Game from './screens/Game';
 import Signup from './screens/Signup';
 
+import '../scss/_colors.scss';
+import '../scss/_texts.scss';
 import '../scss/application.scss';
 
 function App() {
